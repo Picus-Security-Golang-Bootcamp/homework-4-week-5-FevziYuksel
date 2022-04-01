@@ -1,0 +1,60 @@
+{
+    "Books": [
+        {
+            
+            "Name":      "Clean Code",
+            "Pages":     462,
+            "Stocks":    100,
+            "Price":     50,
+            "StockCode": "84484154448448",
+            "ISBN":      "978-3-16-148410-0",
+            "AuthorID" : 1,
+            "Author":
+            {
+                "AuthorName": "Robert C. Martin"
+            }
+        },
+        {
+            "Name":      "The C programming language",
+            "Pages":     238,
+            "Stocks":    200,
+            "Price":     30,
+            "StockCode": "84484154444566",
+            "ISBN":      "978-3-16-134410-0",
+            "AuthorID" : 2,
+            "Author":
+            {
+                "AuthorName": "Dennis M. Ritchie"
+            }
+        },
+        {
+            
+            "Name":      "Effective Java",
+            "Pages":     413,
+            "Stocks":    100,
+            "Price":     50,
+            "StockCode": "8448445667466",
+            "ISBN":      "978-3-16-244410-0",
+            "AuthorID" : 3,
+            "Author":
+            {
+                "AuthorName": "Joshua Bloch"
+            }
+        },
+        {
+            
+            "Name":      "C++ Primer",
+            "Pages":     1399,
+            "Stocks":    50,
+            "Price":     100,
+            "StockCode": "4844564667466",
+            "ISBN":      "978-3-16-443410-0",
+            "AuthorID" : 4,
+            "Author":
+            {
+                "AuthorName": "Stanley B. Lippman"
+            }
+        }
+
+    ]
+}
