@@ -2,8 +2,9 @@ package Models
 
 import (
 	"errors"
-	"gorm.io/gorm"
 	"strings"
+
+	"gorm.io/gorm"
 )
 
 type BookRepository struct {
@@ -41,7 +42,7 @@ func (b *BookRepository) InsertSampleData(books []Book) {
 			StockCode: book.GetBookStockCode(),
 			ISBN:      book.GetBookISBN(),
 			AuthorID:  book.GetBookAuthorID(),
-			Author:    book.Author,
+			Author:    book.GetBookAuthor(),
 		}
 		b.db.Where(Book{Name: newBook.GetBookName()}).FirstOrCreate(&newBook)
 	}
@@ -125,5 +126,4 @@ func (b *BookRepository) BuyBookByItsId(id uint, quantity uint64) {
 	b.db.Model(&book).Where("id = ?", id).
 		Where("stocks > ?", quantity).
 		UpdateColumn("stocks", gorm.Expr("stocks - ?", quantity))
-	//
 }
